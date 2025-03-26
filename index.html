@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR ON RENT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <nav >
+            <div id="logo">
+                <img  src="images/logo-white.png" alt="">
+                <p>Cars Rentals</p>
+            </div>
+            
+            <div id="li-item">
+
+                <input type="checkbox" id="click" hidden>
+   
+                 <label for="click" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#View2">Cars</a></li>
+                    <li><a href="#">Reat Details</a></li>
+                    <li><a href="#view4">Why US?</a></li>
+                    <li><a href="#view6">Testimonal</a></li>
+                    <a href="https://instagram.com/theroyalrajput_7"><button>Register</button></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div id="view1">
+            <div id="left">
+                <div></div>
+                <img src="images/pngimg.com - bmw_PNG99543.png" alt="">
+            </div>
+            <div id="right"> 
+                <div id="p1"><p>👍 100% Trusted car rental platfrom in India 🇮🇳</p></div>
+                <div><h1>FAST AND EASY WAY TO RENT A CAR</h1></div>
+                <div id="p2"><p>Discover a seamless car rental experience with us. Choose from a range of premium vehicles to suit your style and needs, and hit the road with confidence. Quick, easy, and reliable - rent your ride today!</p></div>
+            </div>
+        </div>
+
+
+        <div id="view2">
+            <div id="serch-card">
+                <p>Pick-up Date</p>
+                <!-- <input type="date" placeholder="Pick-up Date" > -->
+
+                <input type="text" id="dateInput" placeholder="Pick-up Date">
+
+
+                <p>Return Date</p>
+                <!-- <input type="date" placeholder="Return Date"> -->
+                <input type="text" id="dateInput" placeholder="Pick-up Date">
+
+                <p>Location</p>
+                <input type="Text" placeholder="Enter Location">
+                <button id="btn99">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+
+        <div id="view3" class="cardxx">
+
+            <div class="button-container">
+                <button id="btn1" class="active" onclick="showCard(1, 'btn1')">BMW</button>
+                <button id="btn2" onclick="showCard(2, 'btn2')">Audi</button>
+                <button id="btn3" onclick="showCard(3, 'btn3')">Land Rover</button>
+                <button id="btn4" onclick="showCard(4, 'btn4')">Lemborghini</button>
+                <button id="btn5" onclick="showCard(5, 'btn5')">Mercedes</button>
+            </div>
+        
+            <div id="card1" class="card-container" >
+                <div id="divcar">
+                    <img src="images/bmw1.jpg" alt="">
+                    <h3>BMW-M4</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p ><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+                
+                <div id="divcar">
+                    <img src="images/bmw2.jpg" alt="">
+                    <h3>BMW-3 Series</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+                <div id="divcar">
+                    <img src="images/bmw3.jpg" alt="">
+                    <h3>BMW-M4 CLS</h3>
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+            </div>
+
+            <div id="card2" class="card-container hidden" >
+                <div id="divcar">
+                    <img src="images/audi1.jpg" alt="">
+                    <h3>Audi-A5 Sportback</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+                
+                <div id="divcar">
+                    <img src="images/audi2.jpg" alt="">
+                    <h3>Audi-TT</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+                <div id="divcar">
+                    <img src="images/audi3.jpg" alt="">
+                    <h3>Audi-RS 6</h3>
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+            </div>
+
+            <div id="card3" class="card-container hidden">
+                <div id="divcar">
+                    <img src="images/rg1.jpg" alt="">
+                    <h3>Range Rover</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+                
+                <div id="divcar">
+                    <img src="images/rg2.jpg" alt="">
+                    <h3>Range Rover</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+                <div id="divcar">
+                    <img src="images/rg3.jpg" alt="">
+                    <h3>Range Rover</h3>
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+            </div>
+
+            <div id="card4" class="card-container hidden">
+                <div id="divcar">
+                    <img src="images/l1.jpg" alt="">
+                    <h3>Lemborghini-Gallardo</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+                
+                <div id="divcar">
+                    <img src="images/l2.jpg" alt="">
+                    <h3>Lemborghini-Huracan</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+                <div id="divcar">
+                    <img src="images/l3.jpg" alt="">
+                    <h3>Lemborghini-Aventador</h3>
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+            </div>
+            <div id="card5" class="card-container hidden">
+                <div id="divcar">
+                    <img src="images/m1.jpg" alt="">
+                    <h3>Mercedes-Benz C</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+                
+                <div id="divcar">
+                    <img src="images/m2.jpg" alt="">
+                    <h3>Mercedes-AMG 1</h3>
+                    <!-- <p>People Manual <br>181km/l Diesel</p> -->
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+
+                <div id="divcar">
+                    <img src="images/m3.jpg" alt="">
+                    <h3>Mercedes-G-Wegon</h3>
+                    <div id="divp">
+                        <p><i class="fa-solid fa-users"></i> People</p>
+                        <p><i class="fa-solid fa-gear"></i> Manul</p>
+                        <p><i class="fa-solid fa-gauge"></i> 181km/h</p>
+                        <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                    </div>
+                    <h2>$100<span style="font-size: 1rem; color: #00000087;">/Per Day</span> <button>Book Now <i class="fa-solid fa-arrow-right"></i></button></h2>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="view4">
+            <div id="div-img">
+                <img src="images/kindpng_5851457.png" alt="">
+            </div>
+            <div class="temp">
+            <div id="hed">
+                <h1>Why choose us</h1>
+                <p>Discover the difference with our car rental service. We offer reliable vehicles, exceptional customer service, and competitive pricing to ensure a seamless rental experience.</p>
+            </div>
+            
+            <div class="div-grid">
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-solid fa-headset"></i></p>
+                        <h1 class="b">
+                            Customer Support</h1>
+                        <p class="c">Our dedicated support team is available to assist you 24/7</p>
+                    </div>
+
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-solid fa-location-dot"></i></i></p>
+                        <h1 class="b">
+                            Many Locations</h1>
+                        <p class="c">Convenient pick-up and drop-off locations to suit your travel needs.</p>
+                    </div>
+
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-solid fa-wallet"></i></p>
+                        <h1 class="b">
+                            Best Price</h1>
+                        <p class="c">Enjoy competitive rates and great value for every rental.</p>
+                    </div>
+
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-solid fa-circle-check"></i></p>
+                        <h1 class="b">
+                            Verified Brands</h1>
+                        <p class="c">Choose from trusted and well-maintained car brands.</p>
+                    </div>
+
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-regular fa-rectangle-xmark"></i></p>
+                        <h1 class="b">
+                            Free Cancellations</h1>
+                        <p class="c">Flexible bookings with free cancellation options.</p>
+                    </div>
+
+                    <div id="div-grid">
+                        <p class="a"><i class="fa-regular fa-rectangle-xmark"></i></p>
+                        <h1 class="b">
+                            Customer Support</h1>
+                        <p class="c">Our dedicated support team is available to assist you 24/7</p>
+                    </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="view5">
+            <div id="div-img"><img src="images/pngegg.png" alt=""></div>
+
+            <div id="divsub">
+                <h1>Subscribe for the latest car rental updates</h1>
+
+            <p>Stay in the know! Subscribe to receive the latest car rental deals, exclusive offers, and updates right to your inbox. Don't miss out on special promotions and the newest additions to our fleet.</p>
+
+            <div id="div-in"><input type="email" placeholder="Enter Email"> <button>Subscribe </button></div>
+            </div>
+
+        </div>
+
+
+        <div id="view6">
+            <div id="headings">
+                <h1>What people say about us?</h1>
+                <p>Discover why our customers love renting with us! Read real reviews and testimonials to see how we deliver exceptional service.</p>
+            </div>
+
+
+            <div id="card">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/c7/b2/ba/c7b2ba4011646c8438a66fe6d9ebd52d.jpg" alt="Profile">
+                            <h3>King Kolhi</h3>
+                            <p>I had an amazing experience renting a car from this service. The booking process was quick and easy, and the car was in perfect condition. Highly recommend!</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/a3/69/9b/a3699bfe26fcc2346be6b5cda7f51553.jpg" alt="Profile">
+                            <h3>Karan Aujla</h3>
+                            <p>The car I rented was top-notch, and the driver was very experienced. It made my road trip so much more enjoyable. Willuse them again next time!</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/a7/cf/c9/a7cfc95827dd13a219810b4d0979bbb1.jpg" alt="Profile">
+                            <h3>Wamiqa Gabbi💗</h3>
+                            <p>Customer support was excellent! They helped me with all my questions, and I felt confident about my booking. I will definitely rent from them again.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/4c/f4/db/4cf4db95352a1c277296db71bc625882.jpg" alt="Profile">
+                            <h3>Sachin Thakur</h3>
+                            <p>Affordable prices and great selection of vehicles! I found exactly what I needed, and the pick-up and drop-off process was seamless. Very happy with my rental.</p>
+                        </div>
+                        <div class="card">
+                            <img src="https://i.pinimg.com/736x/bd/83/e9/bd83e9e5374f1390e313511550a2fa97.jpg" alt="Profile">
+                            <h3>Massom Sharma</h3>
+                            <p>गाड़ी बढ़िया मिली, एकदम साफ-सुथरी और टाइम पर। स्टाफ का व्यवहार भी अच्छा रहा। रेट सही और कोई दिक्कत ना आई। अगली बार भी यहीं से लूंगा!</p>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <button class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="nav-btn next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+
+        <footer>
+            
+
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#view1">Home</a></li>
+                        <li><a href="#view2">Cars</a></li>
+                        <li><a href="#view2">Services</a></li>
+                        <li><a href="#view3">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Self Drive Cars</a></li>
+                        <li><a href="#">Chauffeur Services</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li><a href="#">Wedding Cars</a></li>
+                        <li><a href="#">Long Term Rentals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-con">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Meerut Utter Pradesh, Inida</p>
+                    <p><i class="fas fa-phone"></i> +91 8218477019</p>
+                    <p><i class="fas fa-envelope"></i> sonukasana188@gmail.com</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.x.com/" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Car Rental. All Rights Reserved. | Designed by YourCompany</p>
+            </div>
+        </footer>
+
+
+    </main>
+    
+
+
+
+    <script src="first.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
